@@ -1,0 +1,8 @@
+– Write a program that asks the user for their name and greets them with their name.
+# This program asks the user for their name and greets them.
+# Function to greet the user with their name
+def greet_user():
+    name = input("Enter your name: ")
+    print(f"Hello, {name}!")
+# Test the program
+greet_user()
