@@ -1,0 +1,12 @@
+- It is possible to name the days 0 through 6 where day 0 is Sunday and day 6 is Saturday. If you go on a wonderful holiday leaving on day number 3 (a Wednesday) and you return home after 10 nights you would return home on a Saturday (day 6) Write a general version of the program which asks for the starting day number, and the length of your stay, and it will tell you the number of day of the week you will return on.
+# This program calculates the day of the week you will return home after a holiday.
+# Function to calculate the day of the week after the holiday
+def calculate_return_day():
+    starting_day = int(input("Enter the starting day number (0 for Sunday, 1 for Monday, etc.): "))
+    length_of_stay = int(input("Enter the length of your stay: "))
+    days_of_week = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+    return_day_number = (starting_day + length_of_stay) % 7
+    return_day = days_of_week[return_day_number]
+    print(f"You will return home on a {return_day}")
+# Test the program
+calculate_return_day()
