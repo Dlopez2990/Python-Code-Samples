@@ -1,0 +1,13 @@
+– Modify the previous program such that only the users you and your instructor are greeted with their names.
+# This program greets the user and the user instructor with their names.
+def greet_user():
+    name = input("What is your name? ")
+    print(f"Hello, {name}!")
+greet_user()
+def greet_user():
+    name = input("What is your name? or your instructor last name?")
+    if name.lower() == "Daniel" or name.lower() == "Moncrief":
+        print(f"Hello, {name}!")
+    else:
+        print("Sorry, only 'Daniel' and 'Moncrief' are greeted with their names.")
+greet_user()
